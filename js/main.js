@@ -2,6 +2,135 @@
 // Golden Student Vocabulary - Main JavaScript
 // ============================================
 
+// ============================================
+// Book Order System (Global Function)
+// ============================================
+window.orderBook = function(classNameBn, classNameEn, price) {
+    const modal = document.createElement('div');
+    modal.className = 'order-modal';
+    modal.innerHTML = `
+        <div class="order-modal-content">
+            <button class="modal-close" onclick="this.closest('.order-modal').remove(); document.body.style.overflow = '';">×</button>
+            <div class="order-icon">🛒</div>
+            <h3>অর্ডার কনফার্ম করুন</h3>
+            
+            <div class="order-summary">
+                <h4>অর্ডার ডিটেইলস:</h4>
+                <div class="order-item">
+                    <span>বই:</span>
+                    <strong>Golden Student Voc@bulary - ${classNameBn}</strong>
+                </div>
+                <div class="order-item">
+                    <span>মূল্য:</span>
+                    <strong>৳${price}</strong>
+                </div>
+            </div>
+            
+            <div class="payment-options">
+                <h4>💰 পেমেন্ট অপশন:</h4>
+                
+                <div class="payment-method">
+                    <div class="method-header">
+                        <span>📱</span>
+                        <span>bKash</span>
+                    </div>
+                    <div class="method-details">
+                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-header">
+                        <span>💰</span>
+                        <span>Nagad</span>
+                    </div>
+                    <div class="method-details">
+                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <div class="method-header">
+                        <span>🚀</span>
+                        <span>Rocket</span>
+                    </div>
+                    <div class="method-details">
+                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
+                    </div>
+                </div>
+
+                <div class="payment-method" style="border-color: #28a745;">
+                    <div class="method-header">
+                        <span>🏠</span>
+                        <span>Cash on Delivery</span>
+                    </div>
+                    <div class="method-details">
+                        <p>ঢাকার ভিতরে হোম ডেলিভারি (চার্জ +৬০ টাকা)</p>
+                        <p style="font-size: 0.85rem; font-style: italic;">বই হাতে পেয়ে টাকা দিন</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-instructions">
+                <h4>📝 অর্ডার প্রসেস:</h4>
+                <ol>
+                    <li>উপরের যেকোনো পেমেন্ট মেথড বেছে নিন</li>
+                    <li>bKash/Nagad/Rocket এ টাকা পাঠালে Transaction ID সেভ করুন</li>
+                    <li>নিচের বাটনে ক্লিক করে আমাদের জানান</li>
+                    <li>আপনার নাম, ঠিকানা ও Transaction ID (যদি থাকে) শেয়ার করুন</li>
+                    <li>২৪-৪৮ ঘন্টার মধ্যে ডেলিভারি পাবেন! 🚚</li>
+                </ol>
+            </div>
+            
+            <div class="order-actions">
+                <a href="https://wa.me/8801XXXXXXXXX?text=আসসালামু আলাইকুম!%0A%0Aআমি Golden Student Voc@bulary এর ${classNameBn} (${classNameEn}) বইটি অর্ডার করতে চাই।%0A%0Aমূল্য: ৳${price}%0A%0ATransaction ID: %0Aনাম: %0Aঠিকানা: %0Aফোন: " 
+                   class="btn-whatsapp" 
+                   target="_blank">
+                    💬 WhatsApp এ অর্ডার করুন
+                </a>
+                <a href="sms:+8801XXXXXXXXX?body=আমি ${classNameEn} এর বই অর্ডার করতে চাই। নাম: আপনার নাম | ঠিকানা: | Transaction ID (যদি পেমেন্ট করে থাকেন): " 
+                   class="btn-sms">
+                    📱 SMS পাঠান
+                </a>
+                <a href="tel:+8801XXXXXXXXX" 
+                   class="btn-call">
+                    📞 সরাসরি কল করুন
+                </a>
+            </div>
+            
+            <div style="text-align: center; margin-top: 1.5rem; padding-top: 1rem; border-top: 2px solid #f0f0f0;">
+                <p style="color: #666; font-size: 0.9rem; margin: 0;">
+                    <strong>অথবা</strong> নিচের ইমেইল এ অর্ডার পাঠান:
+                </p>
+                <a href="mailto:goldenvocabulary@email.com?subject=Book Order - ${classNameEn}&body=আমি ${classNameBn} (${classNameEn}) বইটি অর্ডার করতে চাই।%0A%0Aনাম:%0Aফোন:%0Aঠিকানা:%0ATransaction ID (যদি থাকে):" 
+                   style="color: #D4AF37; text-decoration: none; font-weight: 600; font-size: 1rem;">
+                    📧 goldenvocabulary@email.com
+                </a>
+            </div>
+        </div>
+    `;
+    
+    document.body.appendChild(modal);
+    setTimeout(() => modal.classList.add('active'), 10);
+    
+    // Close on backdrop click
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+            setTimeout(() => {
+                modal.remove();
+                document.body.style.overflow = '';
+            }, 300);
+        }
+    });
+    
+    // Prevent body scroll when modal is open
+    document.body.style.overflow = 'hidden';
+};
+
 document.addEventListener('DOMContentLoaded', function() {
     
     // ============================================
