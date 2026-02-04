@@ -1,23 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <title>Book Preview Library</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Student Voc@bulary - Your effort, our support</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo-section">
+                    <div class="book-icon">
+                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 20L65 35L50 50L35 35L50 20Z" fill="currentColor"/>
+                            <path d="M30 40V75C30 78 32 80 35 80H65C68 80 70 78 70 75V40" stroke="currentColor" stroke-width="3"/>
+                            <line x1="50" y1="50" x2="50" y2="80" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h1 class="main-title">Golden<br><span class="subtitle">Student Voc@bulary</span></h1>
+                </div>
+                <p class="tagline">Your effort, our support</p>
+                <p class="description">A dictionary of your textbook - শেখার পথের সঙ্গী</p>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </header>
 
-<h1>📚 Book Preview Library</h1>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">আমাদের সম্পর্কে</h2>
+                <p class="about-text">
+                    Golden Student Vocabulary শিক্ষার্থীদের জন্য একটি বিশেষ শব্দভাণ্ডার যা তাদের পাঠ্যপুস্তকের 
+                    সাথে সামঞ্জস্যপূর্ণ। প্রতিটি ক্লাসের জন্য বিশেষভাবে তৈরি, বোর্ড বইয়ের শব্দের অর্থ, Synonyms, 
+                    Antonyms এবং Parts of Speech সহ সম্পূর্ণ নির্দেশিকা।
+                </p>
+                <div class="author-info">
+                    <div class="author-badge">
+                        <span class="author-label">লিখেছেন</span>
+                        <span class="author-name">Enamuzzaman Adil</span>
+                        <span class="author-credentials">BBA(Accounting), MBA(Accounting) University of Dhaka</span>
+                        <span class="author-experience">১২ বছরের শিক্ষকতার অভিজ্ঞতা</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="book-grid">
-  <div class="book-card">
-    <img src="assets/covers/book1.png" alt="Book Cover">
-    <h3>The Silent Mind</h3>
-    <p><strong>Author:</strong> John Doe</p>
-    <p>A psychological thriller exploring memory and guilt.</p>
-    <a href="preview.html?book=book1">Read Preview</a>
-  </div>
-</div>
+    <!-- Books Section -->
+    <section class="books-section">
+        <div class="container">
+            <h2 class="section-title books-title">আমাদের বই সমূহ</h2>
+            <p class="section-subtitle">প্রতিটি ক্লাসের জন্য বিশেষভাবে প্রস্তুত শব্দভাণ্ডার</p>
+            
+            <div class="books-grid">
+                <!-- Book Card 1 - Class 3 (Turquoise) -->
+                <div class="book-card" data-class="3">
+                    <div class="book-image-wrapper">
+                        <img src="assets/covers/book1.png" alt="Class 3 Vocabulary Book" class="book-cover">
+                        <div class="book-overlay">
+                            <span class="class-badge">Class 3</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Golden Student Voc@bulary</h3>
+                        <p class="book-class">তৃতীয় শ্রেণি</p>
+                        <p class="book-description">বোর্ড বইয়ের শব্দের অর্থ, Synonyms, Antonyms, Parts of Speech</p>
+                        <div class="book-actions">
+                            <button class="btn btn-primary preview-btn" data-pdf="class3.pdf">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                                </svg>
+                                একটু পড়ে দেখুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Book Card 2 - Class 4 (Beige) -->
+                <div class="book-card" data-class="4">
+                    <div class="book-image-wrapper">
+                        <img src="assets/covers/book2.png" alt="Class 4 Vocabulary Book" class="book-cover">
+                        <div class="book-overlay">
+                            <span class="class-badge">Class 4</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Golden Student Voc@bulary</h3>
+                        <p class="book-class">চতুর্থ শ্রেণি</p>
+                        <p class="book-description">বোর্ড বইয়ের শব্দের অর্থ, Synonyms, Antonyms, Parts of Speech</p>
+                        <div class="book-actions">
+                            <button class="btn btn-primary preview-btn" data-pdf="class4.pdf">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                                </svg>
+                                একটু পড়ে দেখুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 - Class 5 -->
+                <div class="book-card" data-class="5">
+                    <div class="book-image-wrapper">
+                        <img src="assets/covers/book3.png" alt="Class 5 Vocabulary Book" class="book-cover">
+                        <div class="book-overlay">
+                            <span class="class-badge">Class 5</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Golden Student Voc@bulary</h3>
+                        <p class="book-class">পঞ্চম শ্রেণি</p>
+                        <p class="book-description">বোর্ড বইয়ের শব্দের অর্থ, Synonyms, Antonyms, Parts of Speech</p>
+                        <div class="book-actions">
+                            <button class="btn btn-primary preview-btn" data-pdf="class5.pdf">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                                </svg>
+                                একটু পড়ে দেখুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 - Class 6 -->
+                <div class="book-card" data-class="6">
+                    <div class="book-image-wrapper">
+                        <img src="assets/covers/book4.png" alt="Class 6 Vocabulary Book" class="book-cover">
+                        <div class="book-overlay">
+                            <span class="class-badge">Class 6</span>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Golden Student Voc@bulary</h3>
+                        <p class="book-class">ষষ্ঠ শ্রেণি</p>
+                        <p class="book-description">বোর্ড বইয়ের শব্দের অর্থ, Synonyms, Antonyms, Parts of Speech</p>
+                        <div class="book-actions">
+                            <button class="btn btn-primary preview-btn" data-pdf="class6.pdf">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" fill="currentColor"/>
+                                </svg>
+                                একটু পড়ে দেখুন
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">কেন আমাদের বই বেছে নেবেন?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>বোর্ড বই অনুযায়ী</h3>
+                    <p>প্রতিটি ক্লাসের বোর্ড বইয়ের সাথে সম্পূর্ণ সামঞ্জস্যপূর্ণ</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>বিস্তারিত ব্যাখ্যা</h3>
+                    <p>Synonyms, Antonyms এবং Parts of Speech সহ</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>অভিজ্ঞ শিক্ষক</h3>
+                    <p>১২ বছরের শিক্ষকতার অভিজ্ঞতা থেকে তৈরি</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>সহজ বোধগম্য</h3>
+                    <p>শিক্ষার্থীদের জন্য সহজ এবং বোধগম্য ভাষায়</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Order Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title">যোগাযোগ করুন</h2>
+                <p class="contact-description">বই অর্ডার বা যেকোনো তথ্যের জন্য আমাদের সাথে যোগাযোগ করুন</p>
+                <div class="contact-info">
+                    <a href="tel:+8801XXXXXXXXX" class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+                        </svg>
+                        <span>+880 1XXX-XXXXXX</span>
+                    </a>
+                    <a href="mailto:goldenvocabulary@email.com" class="contact-item">
+                        <svg class="contact-icon" viewBox="0 0 24 24" fill="none">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+                        </svg>
+                        <span>goldenvocabulary@email.com</span>
+                    </a>
+                </div>
+                <div class="payment-notice">
+                    <p><em>অনলাইন পেমেন্ট সিস্টেম শীঘ্রই চালু হবে</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Golden Student Voc@bulary. All rights reserved.</p>
+                <p class="footer-tagline">Your effort, our support - আপনার চেষ্টা, আমাদের সহযোগিতা</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>

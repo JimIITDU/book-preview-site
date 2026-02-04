@@ -1,17 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <title>Book Preview</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview - Golden Student Voc@bulary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .preview-container {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 800px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        h1 {
+            color: #D4AF37;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .features {
+            text-align: left;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+        
+        .features h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            color: #555;
+        }
+        
+        .features li::before {
+            content: "✓ ";
+            color: #D4AF37;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #F4D03F 0%, #D4AF37 50%, #B8941E 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1rem 0.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+        }
+        
+        .instructions {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #fff3cd;
+            border-radius: 10px;
+            border-left: 4px solid #D4AF37;
+        }
+        
+        .instructions h3 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+        
+        .instructions p {
+            color: #856404;
+            line-height: 1.6;
+        }
+        
+        code {
+            background: #f1f1f1;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            color: #c7254e;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            color: #999;
+            font-size: 0.9rem;
+        }
+    </style>
 </head>
 <body>
-
-<h2>Book Preview</h2>
-<div id="preview-text">Loading preview...</div>
-
-<a href="index.html">⬅ Back to Library</a>
-
-<script src="js/main.js"></script>
+    <div class="preview-container">
+        <div class="logo">📚</div>
+        <h1>Golden Student Voc@bulary</h1>
+        <p class="subtitle">Website Preview & Setup Guide</p>
+        
+        <div class="features">
+            <h2>✨ Website Features:</h2>
+            <ul>
+                <li>Beautiful Golden-themed design</li>
+                <li>Fully responsive (Mobile, Tablet, Desktop)</li>
+                <li>4 Book displays (Class 3, 4, 5, 6)</li>
+                <li>Interactive "একটু পড়ে দেখুন" preview buttons</li>
+                <li>Smooth animations and transitions</li>
+                <li>Contact section with phone & email</li>
+                <li>Placeholder for payment integration</li>
+                <li>Bengali & English content support</li>
+            </ul>
+        </div>
+        
+        <div>
+            <a href="index.html" class="btn">🚀 View Website</a>
+        </div>
+        
+        <div class="instructions">
+            <h3>📋 Quick Setup Instructions:</h3>
+            <p>
+                <strong>To deploy on Netlify:</strong><br>
+                1. Drag and drop the entire folder to <a href="https://app.netlify.com/drop" target="_blank">Netlify Drop</a><br>
+                2. Your site will be live instantly!<br><br>
+                
+                <strong>To add PDF previews:</strong><br>
+                Place your PDF files in <code>assets/pdfs/</code> with names:<br>
+                <code>class3.pdf</code>, <code>class4.pdf</code>, <code>class5.pdf</code>, <code>class6.pdf</code><br><br>
+                
+                <strong>To customize:</strong><br>
+                • Edit colors in <code>css/style.css</code><br>
+                • Change content in <code>index.html</code><br>
+                • Update contact info in the Contact section<br><br>
+                
+                <strong>GitHub Pages:</strong><br>
+                1. Create a repository on GitHub<br>
+                2. Upload all files<br>
+                3. Enable GitHub Pages in Settings → Pages<br>
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Made with ❤️ for Golden Student Voc@bulary</p>
+            <p><em>Your effort, our support - আপনার চেষ্টা, আমাদের সহযোগিতা</em></p>
+        </div>
+    </div>
 </body>
 </html>
