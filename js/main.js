@@ -35,7 +35,7 @@ window.orderBook = function(classNameBn, classNameEn, price) {
                         <span>bKash</span>
                     </div>
                     <div class="method-details">
-                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p>পার্সোনাল: <strong>01521432606</strong></p>
                         <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ window.orderBook = function(classNameBn, classNameEn, price) {
                         <span>Nagad</span>
                     </div>
                     <div class="method-details">
-                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p>পার্সোনাল: <strong>01521432606</strong></p>
                         <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
                     </div>
                 </div>
@@ -57,7 +57,7 @@ window.orderBook = function(classNameBn, classNameEn, price) {
                         <span>Rocket</span>
                     </div>
                     <div class="method-details">
-                        <p>পার্সোনাল: <strong>01XXX-XXXXXX</strong></p>
+                        <p>পার্সোনাল: <strong>01521432606</strong></p>
                         <p style="font-size: 0.85rem; font-style: italic;">এই নাম্বারে Send Money করুন</p>
                     </div>
                 </div>
@@ -86,16 +86,16 @@ window.orderBook = function(classNameBn, classNameEn, price) {
             </div>
             
             <div class="order-actions">
-                <a href="https://wa.me/8801XXXXXXXXX?text=আসসালামু আলাইকুম!%0A%0Aআমি Golden Student Voc@bulary এর ${classNameBn} (${classNameEn}) বইটি অর্ডার করতে চাই।%0A%0Aমূল্য: ৳${price}%0A%0ATransaction ID: %0Aনাম: %0Aঠিকানা: %0Aফোন: " 
+                <a href="https://wa.me/8801521432606?text=আসসালামু আলাইকুম!%0A%0Aআমি Golden Student Voc@bulary এর ${classNameBn} (${classNameEn}) বইটি অর্ডার করতে চাই।%0A%0Aমূল্য: ৳${price}%0A%0ATransaction ID: %0Aনাম: %0Aঠিকানা: %0Aফোন: " 
                    class="btn-whatsapp" 
                    target="_blank">
                     💬 WhatsApp এ অর্ডার করুন
                 </a>
-                <a href="sms:+8801XXXXXXXXX?body=আমি ${classNameEn} এর বই অর্ডার করতে চাই। নাম: আপনার নাম | ঠিকানা: | Transaction ID (যদি পেমেন্ট করে থাকেন): " 
+                <a href="sms:+8801521432606?body=আমি ${classNameEn} এর বই অর্ডার করতে চাই। নাম: আপনার নাম | ঠিকানা: | Transaction ID (যদি পেমেন্ট করে থাকেন): " 
                    class="btn-sms">
                     📱 SMS পাঠান
                 </a>
-                <a href="tel:+8801XXXXXXXXX" 
+                <a href="tel:+8801521432606" 
                    class="btn-call">
                     📞 সরাসরি কল করুন
                 </a>
